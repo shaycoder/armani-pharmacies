@@ -1,0 +1,76 @@
+.services {
+    background-color: $black;
+
+    &__title {
+        text-align: center;
+        margin: 1.2rem 0 3rem 0;
+        @mixin textGradient;
+        font-size: 1.6rem;
+        @mixin atMedium {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__items {
+        display: grid;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding-block: 1.5rem;
+        }
+        background: url('./assets/images/bg4.jpg') no-repeat center;
+        background-size: cover;
+        
+        
+
+        .item__desc {
+            padding-block: 3rem;
+
+            .item_icon {
+                display: inline-block;
+                text-align: center;
+            }
+
+            h3 {
+                @mixin textGradient;
+                margin-bottom: 1rem;
+                @mixin forSmall {
+                    font-size: 1.4rem;
+                }
+            }
+
+            p {
+                font-size: 1.15rem;
+                @mixin atMedium {
+                    font-size: 1.25rem;
+                }
+                color: #ddd;
+            }
+
+            span {
+                margin-bottom: 1rem;
+                @mixin textGradient;
+                @mixin forSmall {
+                    text-align: center;
+                }
+            }
+
+            @mixin forSmall {
+                order: 1;
+            }
+        }
+
+        .item__img {
+            padding-block: 1.2rem;
+            @mixin forSmall {
+                order: 2;
+            }
+            @mixin atMedium {
+                padding: 2rem;
+            }
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+}

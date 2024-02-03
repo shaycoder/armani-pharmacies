@@ -1,0 +1,54 @@
+.top-sec {
+  background: url('./assets/images/bg5.jpg') no-repeat center;
+  background-size: cover;
+  &__title {
+      text-align: center;
+      margin: 1.2rem 0 3rem 0;
+      color: $gold;
+      font-size: 1.6rem;
+      font-weight: bold;
+      @mixin atMedium {
+          font-size: 2.2rem;
+      }
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*align-items: stretch; /* Default */
+  }
+  
+  .item {
+    flex: 1;
+    padding: 1.5rem;
+    @mixin forSmall {
+      flex: auto;
+      padding: 0;
+    }
+    @mixin atMedium {
+        margin: 0 20px;
+        background-color: $white;
+        box-shadow: 10px 10px 49px -17px rgba(23,23,23,0.2);
+    }
+    
+    border-radius: 10px;
+    &:nth-child(1) {
+        padding: 0;
+    }
+  }
+  
+  .item h3 {
+    margin-top: 2.2rem;
+    text-align: center;
+  }
+  
+  .item p {
+    margin-top: 1.2rem;
+    color: $black;
+    font-size: 1.25rem;
+    @mixin forSmall {
+      font-size: 1.15rem;
+    }
+  }      
+}

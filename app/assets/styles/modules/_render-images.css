@@ -1,0 +1,10 @@
+.render-images {
+    display: grid;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr;
+    }
+    gap: 2rem;
+    background: url('./assets/images/bg1.jpg') no-repeat center;
+    background-size: cover;
+    /*background-color: $black;*/
+}
