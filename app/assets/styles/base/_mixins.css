@@ -27,3 +27,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@define-mixin whiteGradient {
+    background: -webkit-linear-gradient($white, $lightgrey, $white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

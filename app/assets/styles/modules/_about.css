@@ -1,12 +1,16 @@
 .about {
-    background: url('./assets/images/inner-bg.jpg') no-repeat center;
+    background: url('./assets/images/bg5.jpg') no-repeat center;
     background-size: cover;
-    color: $white;
+    color: $black;
+
+    h2 {
+        color: $gold;
+    }
 
     h3 {
         margin-top: 3rem;
         margin-bottom: 1.2rem;
-        @mixin textGradient;
+        color: $gold;
         @mixin forSmall {
             font-size: 1.3rem;
         }
@@ -17,7 +21,7 @@
         gap: 2rem;
         padding: .5rem;
         @mixin atMedium {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             padding: 1.5rem;
         }        
     }

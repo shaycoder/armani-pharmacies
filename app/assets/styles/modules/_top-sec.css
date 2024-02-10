@@ -45,7 +45,7 @@
   
   .item p {
     margin-top: 1.2rem;
-    color: $black;
+    color: #555;
     font-size: 1.25rem;
     @mixin forSmall {
       font-size: 1.15rem;

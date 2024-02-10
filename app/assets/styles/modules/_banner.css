@@ -34,10 +34,6 @@
 
         p {
             color: $white;
-            font-size: 1.25rem;
-            @mixin forSmall {
-                font-size: 1.15rem;
-            }
             line-height: 1.6;
         }
     }
@@ -49,11 +45,5 @@
         @mixin forSmall {
             order: 1;
         }
-    }
-}
-
-.mob-image {
-    @mixin atMedium {
-        display: none;
     }
 }

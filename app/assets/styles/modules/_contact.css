@@ -1,5 +1,5 @@
 .contact-section {
-    background: url('./assets/images/inner-bg.jpg') no-repeat center;
+    background: url('./assets/images/bg2.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -8,16 +8,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: $white;
 
     h2 {
-        margin: 1rem 0 2rem 0;
         @mixin textGradient;
     }
 
     p {
-        margin-bottom: 3rem;
-        text-align: center;
+        color: $lightgrey;
+        margin-bottom: 1.5rem;
+        margin-inline: 1rem;
+        @mixin atMedium {
+            margin-inline: 3.125rem;
+        }
     }
 
     .contact-item {
@@ -33,6 +35,7 @@
             padding: .75rem 0;
             font-size: 1rem;
             font-weight: 500;
+            color: $lightgrey;
             
             @mixin atMedium {
                 font-size: 1.19rem;

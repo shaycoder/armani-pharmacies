@@ -1,9 +1,10 @@
 import '../styles/styles.css';
 import MobileMenu from './modules/MobileMenu';
-import Scroller from './modules/Scroller';
+import Loader from './modules/Loader';
 import AOS from 'aos';
 
 new MobileMenu();
+new Loader();
 
 // init AOS animation
 window.addEventListener("load", () => {
@@ -12,8 +13,6 @@ window.addEventListener("load", () => {
         offset: 100,
     });
 });
-
-new Scroller();
 
 if(module.hot) {
     module.hot.accept()
