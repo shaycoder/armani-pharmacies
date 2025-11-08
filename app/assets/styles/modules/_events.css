@@ -1,0 +1,61 @@
+.events {
+    background-color: $black;
+    @mixin atMedium {
+        background: url('./assets/images/bg4.webp') no-repeat right bottom;
+        background-size: cover;
+    }
+    color: $white;
+    h1 {
+        @mixin textGradient;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-block: 1rem;
+        @mixin atMedium {
+            margin-block: 3rem;
+        }
+        text-transform: capitalize;
+    }
+
+    &__sec {
+        &--detail {
+            display: grid;
+            padding: 1rem;
+            gap: 1rem;
+            @mixin atMedium {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 2rem;
+            }
+            img {
+                width: 400px;
+                @mixin forSmall {
+                    order: 2;
+                }
+            }
+
+            h2 {
+                @mixin textGradient;
+                margin-bottom: .5rem;
+                font-size: 1.6rem;
+                display: inline-block;
+                border-bottom: 2px solid $gold;
+                padding-bottom: .5rem;
+                text-align: left;
+            }
+
+            div {
+                @mixin forSmall {
+                    background: url('./assets/images/bg4.webp') no-repeat center;
+                    background-size: contain;
+                }
+                p {
+                    color: $white;
+                    @mixin atMedium {
+                        text-align: justify;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

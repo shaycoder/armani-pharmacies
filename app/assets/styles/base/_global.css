@@ -96,3 +96,7 @@ ul {
         transform: scale(.9);
     }
 }
+
+.website {
+    display: none;
+}

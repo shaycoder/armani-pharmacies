@@ -4,7 +4,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
     }
-    background: url('./assets/images/bg2.jpg') no-repeat center;
+    background: url('./assets/images/bg2.webp') no-repeat center;
     background-size: cover;    
     height: 85vh;
 
